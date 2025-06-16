@@ -10,18 +10,18 @@ phases:
       - echo Building Docker images...
       - docker build -t react-app ./frontend
       - docker build -t django-app ./backend
-      - docker tag react-app:latest 982534378917.dkr.ecr.us-east-1.amazonaws.com/react_app:latest
-      - docker tag django-app:latest 982534378917.dkr.ecr.us-east-1.amazonaws.com/django_app:latest
+      - docker tag react-app:latest 982534378917.dkr.ecr.us-east-1.amazonaws.com/react_app
+      - docker tag django-app:latest 982534378917.dkr.ecr.us-east-1.amazonaws.com/django_app
   post_build:
     commands:
       - echo Pushing images to ECR...
-      - docker push 982534378917.dkr.ecr.us-east-1.amazonaws.com/react_app:latest
-      - docker push 982534378917.dkr.ecr.us-east-1.amazonaws.com/django_app:latest
+      - docker push 982534378917.dkr.ecr.us-east-1.amazonaws.com/react_app
+      - docker push 982534378917.dkr.ecr.us-east-1.amazonaws.com/django_app
       - echo Writing imagedefinitions.json...
       - |
         printf '[{"name":"react-container","imageUri":"%s"}, {"name":"django-container","imageUri":"%s"}]' \
-        982534378917.dkr.ecr.us-east-1.amazonaws.com/react_app:latest \
-        982534378917.dkr.ecr.us-east-1.amazonaws.com/django_app:latest > imagedefinitions.json
+        982534378917.dkr.ecr.us-east-1.amazonaws.com/react_app \
+        982534378917.dkr.ecr.us-east-1.amazonaws.com/django_app > imagedefinitions.json
 artifacts:
   files:
     - imagedefinitions.json
