@@ -1,0 +1,46 @@
+/* src/LandingIntroSection.css */
+
+.landing-intro {
+    background-color: #000;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .landing-intro h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  
+  .landing-intro p {
+    font-size: 1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 1.5rem auto;
+  }
+  
+  .landing-intro img {
+    margin-top: 2rem;
+    width: 50px;
+    height: auto;
+    opacity: 0.8;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .landing-intro h1 {
+      font-size: 1.5rem;
+    }
+  
+    .landing-intro p {
+      font-size: 0.95rem;
+    }
+  
+    .landing-intro img {
+      width: 40px;
+    }
+  }
+  

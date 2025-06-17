@@ -1,0 +1,121 @@
+/* SellerDashboard.css */
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.dashboard-orders {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.dashboard-order-card {
+  display: flex;
+  gap: 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+  align-items: flex-start;
+}
+
+.order-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.order-details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.order-details h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.order-details p {
+  margin: 0.2rem 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Status Badges */
+.order-status,
+.payment-status {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  margin-right: 10px;
+}
+
+.order-status.pending {
+  background-color: #f0ad4e;
+}
+.order-status.shipped {
+  background-color: #5bc0de;
+}
+.order-status.delivered {
+  background-color: #5cb85c;
+}
+
+.payment-status.paid {
+  background-color: #4caf50;
+}
+.payment-status.failed {
+  background-color: #f44336;
+}
+.payment-status.pending {
+  background-color: #ffc107;
+}
+
+.status-select {
+  margin-top: 0.6rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+.status-select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard-order-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .order-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .order-details {
+    text-align: center;
+  }
+}

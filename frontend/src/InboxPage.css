@@ -1,0 +1,62 @@
+/* InboxPage.css */
+.inbox-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  
+  .inbox-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+  }
+  
+  .inbox-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .inbox-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    background-color: #f9f9f9;
+  }
+  
+  .inbox-card:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .inbox-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inbox-user {
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  
+  .inbox-message {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .inbox-time {
+    font-size: 0.8rem;
+    color: #999;
+    margin-left: 1rem;
+    white-space: nowrap;
+  }
+  

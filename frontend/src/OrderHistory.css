@@ -1,0 +1,124 @@
+/* src/OrderHistory.css */
+.cart-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .cart-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+  }
+  
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+  }
+  
+  .cart-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+  }
+  
+  .item-info {
+    flex-grow: 1;
+  }
+  
+  .item-info h4 {
+    margin: 0 0 0.3rem;
+    font-size: 1.3em;
+    color: #222;
+  }
+  
+  .item-info p {
+    margin: 0.5rem 0;
+    color: #666;
+    font-size: 0.95rem;
+  }
+  
+  /* Status Badges */
+  .order-status,
+  .payment-status {
+    display: inline-block;
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .order-status.pending {
+    background-color: #f0ad4e;
+  }
+  
+  .order-status.shipped {
+    background-color: #5bc0de;
+  }
+  
+  .order-status.delivered {
+    background-color: #5cb85c;
+  }
+  
+  .payment-status.paid {
+    background-color: #4caf50;
+  }
+  
+  .payment-status.failed {
+    background-color: #f44336;
+  }
+  
+  .payment-status.pending {
+    background-color: #ffc107;
+  }
+  
+  /* Pay Now Button */
+  .btn-pay-now {
+    background-color: #222;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-pay-now:hover {
+    background-color: #444;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .cart-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .item-info {
+      width: 100%;
+    }
+  
+    .cart-container h2 {
+      font-size: 1.5rem;
+    }
+  }
+  

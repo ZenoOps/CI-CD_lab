@@ -1,0 +1,102 @@
+/* src/Checkout.css */
+
+.checkout-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  h2 .checkout-h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #222;
+  }
+
+  
+  
+  .user-info-form,
+  .order-summary {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background-color: #fafafa;
+  }
+  
+  .user-info-form input,
+  .user-info-form select {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #fff;
+    transition: border 0.2s ease;
+  }
+  
+  .user-info-form input:focus,
+  .user-info-form select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  label {
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+    display: block;
+  }
+  
+  .address-preview {
+    margin: 1rem 0;
+    font-size: 1rem;
+    background: #f0f8ff;
+    padding: 0.75rem;
+    border-radius: 6px;
+    border-left: 4px solid #007bff;
+  }
+  
+  .order-item {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+    font-size: 1rem;
+  }
+  
+  .order-summary h4 {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    color: #333;
+    text-align: right;
+  }
+  
+  .btn-checkout,
+  .user-info-form button {
+    background-color: #111;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+  }
+  
+  .btn-checkout:hover,
+  .user-info-form button:hover {
+    background-color: #333;
+  }
+  
+  .checkout-message {
+    margin-top: 1rem;
+    text-align: center;
+    color: green;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  

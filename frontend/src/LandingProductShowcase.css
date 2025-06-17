@@ -1,0 +1,153 @@
+/* LandingProductShowcase.css */
+
+.product-showcase-container {
+    padding: 2rem 1rem;
+    background-color: #fff;
+  }
+  
+  .product-showcase-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .product-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .product-tab {
+    padding: 1rem 1rem;
+    border: 1px solid #000;
+    background-color: transparent;
+    color: #000;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .product-tab.active,
+  .product-tab:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .view-all {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 2px solid #000;
+    transition: all 0.3s;
+  }
+  
+  .view-all:hover {
+    opacity: 0.8;
+  }
+  
+  .product-row-wrapper {
+    position: relative;
+  }
+  
+  .product-cards-row {
+    display: flex;
+    overflow-x: auto;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    scroll-behavior: smooth;
+  }
+  
+  .product-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease;
+    width: 100%;
+  }
+  
+  .product-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .product-link:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+  }
+  
+  .product-card h4 {
+    /* font-size: 1rem; */
+    margin: 0.2rem 0;
+  }
+  
+  .product-card .price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #000;
+    margin: 0.5rem 0;
+    display: block;
+  }
+  
+  .product-card p {
+    font-size: 0.85rem;
+    color: #666;
+  }
+  
+  /* Arrow button (shared styles) */
+  .arrow-button {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background: white;
+    border: 1px solid #ccc;
+    font-size: 1.5rem;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .arrow-button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Left arrow */
+  .arrow-button.left {
+    left: 0;
+  }
+  
+  /* Right arrow */
+  .arrow-button.right {
+    right: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .product-tabs {
+      flex-wrap: wrap;
+    }
+  
+    .product-tab {
+      font-size: 0.9rem;
+    }
+  
+    .arrow-button {
+      font-size: 1.2rem;
+      padding: 0.2rem 0.5rem;
+    }
+  }
+  

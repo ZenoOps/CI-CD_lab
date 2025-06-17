@@ -1,0 +1,130 @@
+/* src/Cart.css */
+.cart-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .cart-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+  }
+  
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+  }
+  
+  .cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+  }
+  
+  .item-info {
+    flex-grow: 1;
+  }
+  
+  .item-info h4 {
+    margin: 0 0 0.3rem;
+    font-size: 1.1rem;
+    color: #222;
+  }
+  
+  .item-info p {
+    margin: 0.2rem 0;
+    color: #666;
+  }
+  
+  .quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .quantity-control button {
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  
+  .quantity-control button:hover {
+    background-color: #ddd;
+  }
+  
+  .remove-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+  }
+  
+  .remove-btn:hover {
+    background-color: #e60023;
+  }
+  
+  .cart-summary {
+    text-align: right;
+    margin-top: 2rem;
+  }
+  
+  .cart-summary h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .btn-checkout {
+    background-color: #222;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-checkout:hover {
+    background-color: #444;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .cart-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .item-info {
+      width: 100%;
+    }
+  
+    .cart-summary {
+      text-align: center;
+    }
+  }
+  
