@@ -10,8 +10,8 @@ phases:
       - echo Building Docker images...
       - docker build -t react-app ./frontend
       - docker build -t django-app ./backend
-      - docker tag react-app:v1 982534378917.dkr.ecr.us-east-1.amazonaws.com/react_app
-      - docker tag django-app:v1 982534378917.dkr.ecr.us-east-1.amazonaws.com/django_app
+      - docker tag react-app:latest 982534378917.dkr.ecr.us-east-1.amazonaws.com/react_app
+      - docker tag django-app:latest 982534378917.dkr.ecr.us-east-1.amazonaws.com/django_app
   post_build:
     commands:
       - echo Pushing images to ECR...
