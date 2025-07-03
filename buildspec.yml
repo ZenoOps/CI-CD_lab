@@ -1,8 +1,16 @@
 version: 0.2
 
+env:
+  parameter-store:
+    username: Docker_Hub_Username
+    password: Docker_Hub_Password
+
 phases:
   pre_build:
     commands:
+      - echo "Logging in to Docker Hub using Systems Manager credentials..."
+      - echo "$password" | docker login --username $username --password-stdin docker.io
+      - echo "Docker Hub login successful."
       - echo Logging in to Amazon ECR...
       - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 982534378917.dkr.ecr.us-east-1.amazonaws.com
   build:
