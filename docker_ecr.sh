@@ -10,7 +10,6 @@ fi
 
 '''
 
-
 # Set AWS credentials path as an environment variable
 # This env variable will be gone after the script has been executed.
 # Don't worry about your credentials path being exposed xD
