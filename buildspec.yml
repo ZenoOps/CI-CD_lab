@@ -5,6 +5,7 @@ env:
     username: Docker_Hub_Username
     password: Docker_Hub_Password
 
+#You can remove the docker login part if your public IP hasn't reach the push/pull limit yet.
 phases:
   pre_build:
     commands:
